@@ -1,0 +1,16 @@
+<package>
+  <description brief="Vive Tracker ROS Node">
+
+     Vive Tracker ROS Node
+
+  </description>
+  <author>Abhijit Majumdar</author>
+  <maintainer email="abhijit.g.majumdar@gmail.com">Abhijit Majumdar</maintainer>
+  <license>GPLv3</license>
+  <depend package="roscpp"/>
+  <depend package="rospy"/>
+  <depend package="std_msgs"/>
+  <depend package="tf2"/>
+  <depend package="tf2_ros"/>
+
+</package>

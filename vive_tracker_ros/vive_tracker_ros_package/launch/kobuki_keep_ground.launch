@@ -1,0 +1,7 @@
+<launch>
+  <include file="$(find vive_tracker_ros_package)/launch/vive_tracker_ros.launch"/>
+  <include file="$(find kobuki_node)/launch/minimal.launch"/>
+  <node name="kobuki_controller_node" pkg="vive_tracker_ros_package" type="kobuki_control.py" output="screen" >
+  </node>
+</launch>
+

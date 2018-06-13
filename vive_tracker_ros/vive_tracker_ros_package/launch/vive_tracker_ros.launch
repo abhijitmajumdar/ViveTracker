@@ -1,0 +1,9 @@
+<launch>
+  <arg name="config" default="$(find vive_tracker_ros_package)/config.json" />
+  <node name="vive_tracker_node" pkg="vive_tracker_ros_package" type="vive_tracker_ros_node" output="screen" >
+    <param name="config_file" value="$(arg config)" />
+    <param name="calibrate" type="bool" value="true" />
+  </node>
+  <!--node pkg="tf" type="static_transform_publisher" name="tracker_link_tf" args="1.0 0.0 0.0 0.0 0.0 0.0 1.0 tracker_link tracker_robot_link 100" /-->
+</launch>
+
